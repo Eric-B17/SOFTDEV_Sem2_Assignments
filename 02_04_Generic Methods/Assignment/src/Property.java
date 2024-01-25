@@ -38,7 +38,11 @@ public class Property<T extends Comparable<T>> implements Inequality<T> {
 
     @Override
     public boolean isEqual(Property<T> other) {
-        return false; // TODO: Fix this by actually implementing the code
+        if (t.compareTo(other.t) == 0) {
+            return true;
+        } else {
+            return false;
+        } // TODO: Fix this by actually implementing the code
     }
 
     @Override
@@ -52,7 +56,13 @@ public class Property<T extends Comparable<T>> implements Inequality<T> {
         // You already have an isGreaterThan method
         // You already have an isEqual method
         // Use logical or (||) and return the result.
-        throw new UnsupportedOperationException("Unimplemented method 'isGreaterThanOrEqual'");
+        if (t.compareTo(other.t) == 1) {
+            return true;
+        } else if(t.compareTo(other.t) == 0){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     @Override
@@ -61,7 +71,13 @@ public class Property<T extends Comparable<T>> implements Inequality<T> {
         // You already have an isLessThan method
         // You already have an isEqual method
         // Use logical or (||) and return the result.
-        throw new UnsupportedOperationException("Unimplemented method 'isLessThanOrEqual'");
+        if (t.compareTo(other.t) == 1) {
+            return true;
+        } else if(t.compareTo(other.t) == 0){
+            return false;
+        }else {
+            return true;
+        }
     }
 
 }
