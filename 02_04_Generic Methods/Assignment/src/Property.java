@@ -80,4 +80,5 @@ public class Property<T extends Comparable<T>> implements Inequality<T> {
         }
     }
 
+
 }
