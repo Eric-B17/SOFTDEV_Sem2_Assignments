@@ -29,4 +29,8 @@ public interface TriFunction<T, U, V, R> {
 
     R apply(T t, U u, V v);
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b07c04954cf5d98c8355e77ca2d424026736b5ce

@@ -42,4 +42,8 @@ public class App {
 
             };
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b07c04954cf5d98c8355e77ca2d424026736b5ce
