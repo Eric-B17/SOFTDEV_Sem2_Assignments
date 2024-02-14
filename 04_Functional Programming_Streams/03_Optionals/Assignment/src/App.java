@@ -14,11 +14,11 @@ public class App {
         //Lambda notation examples
         Function<Integer, Integer> add5 = (num) -> num + 5;
         Function<Integer, Integer> div2 = (num) -> num / 2;
-        // Function<Integer, Integer> add5Divide2 = (num) -> {
-        //     num = num + 5;
-        //     num = num / 5;
-        //     return num;
-        // };
+        Function<Integer, Integer> add5Divide2 = (num) -> {
+             num = num + 5;
+             num = num / 5;
+             return num;
+         };
 
         Function<Integer, Integer> add5Divide2UsingAndThen = add5.andThen(div2);
 
