@@ -2,12 +2,17 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class App {
     public static void main(String[] args) throws Exception {
         // use streams to generate a list of numbers from 0 to 10
         // use streams and Functions with lambdas to make a list with 5 added to each numbers in the ints list
         // use streams and foreach to print out the values
+        Stream<String> myStringStream = Stream.of(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0);
+        myStringStream.stream().
+        Stream<Function> numbers = new Stream<Function>();
+            numbers.add(5);
 
         //What else you need to do.  
         //TODO:  repeate the mapping wtih an extra div2Function and map the list of intsPlus5 to make
