@@ -12,7 +12,6 @@ public class App {
 
         //create  a list of strings.  
         //fill that list with your daily school schedule
-<<<<<<< HEAD
          List<String> myStringList = List.of(
                  "US History",
                  "WEB DEV",
@@ -22,8 +21,6 @@ public class App {
                  "Spanish 3",
                  "Physics",
         "");
-=======
->>>>>>> 48b240cdfbbd77b77838595862bad0bf0ee1622d
         //write a Function<String, String> toLowerCase
         //the function will equal (s) -> s.toLowerCase();
         //map your list of strings to another list of strings using 
