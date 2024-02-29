@@ -1,4 +1,6 @@
 import java.util.List;
+import java.util.function.Function;
+import java.util.stream.Stream;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -21,6 +23,18 @@ public class App {
                  "Spanish 3",
                  "Physics",
         "");
+
+        Stream<String> filteredStream = myStringList.stream();
+        System.out.println(filteredStream.toList());
+
+        Function<String, String> toLowerCase = s -> s.toLowerCase();
+
+
+        List<String> lowerCaseSchedule = myStringList.stream().map(toLowerCase).toList();
+
+        System.out.println(lowerCaseSchedule);
+        
+        
         //write a Function<String, String> toLowerCase
         //the function will equal (s) -> s.toLowerCase();
         //map your list of strings to another list of strings using 
