@@ -14,12 +14,12 @@ public class App {
     }
 
     DoubleProperty doubleProperty = DoubleProperty.of(" 10");
-        Function<DoubleProperty, DoubleProperty> minusToDoubleProperty = (str) -> {
-            doubleProperty.minusToEnd(str);
-            return doubleProperty;
-        };
+    Function<DoubleProperty, DoubleProperty> minusToDoubleProperty = (str) -> {
+        doubleProperty.minus(str);
+        return doubleProperty;
+    };
         
-        doubleProperty.addToEnd(DoubleProperty.of(" 50"));
-        System.out.println(doubleProperty);
+    doubleProperty.plus(DoubleProperty.of(50.0));
+    System.out.println(doubleProperty);
 
 }
